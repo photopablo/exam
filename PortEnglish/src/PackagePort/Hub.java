@@ -28,7 +28,7 @@ public class Hub {
         int counter= 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 12; j++) {
-                if (containers[i][j].getPriority() == priority){
+                if (this.containers[i][j] != null && this.containers[i][j].getPriority() == priority){
                     counter++;
                 }
             }
